@@ -1,0 +1,29 @@
+$black: rgba(0, 0, 0, 1);
+$white: rgba(255, 255, 255, 1);
+$yellow: rgba(253, 206, 37, 1);
+$orange: rgba(233, 102, 11, 1);
+$grey: rgba(245, 245, 245, 1);
+$blue: rgba(12, 71, 139, 1);
+$dark-grey: rgba(131, 131, 131, 1);
+
+
+
+
+
+:root {
+
+    --black: #{$black};
+    --white: #{$white};
+    --yellow:  #{$yellow};
+    --orange:  #{$orange};
+    --grey:  #{$grey};
+    --blue:  #{$blue};
+    --dark-grey:  #{$dark-grey};
+
+    --padding-section: 10rem;
+
+    // Размеры шрифтов
+    --fz: 1.5rem;
+   
+
+}

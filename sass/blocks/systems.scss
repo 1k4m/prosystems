@@ -1,0 +1,128 @@
+.systems {
+    padding: 15rem 0 20rem 0;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__headline {
+        text-align: center;
+        margin-bottom: 8rem;
+        animation: slideFromDown 1.2s ease-out;
+    }
+
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20rem;
+        align-items: flex-end;
+        animation: slideFromDown 1.2s ease-out;
+    }
+
+    &__block-mobile {
+        display: none;
+    }
+
+    &__picture {
+        width: 30rem;
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    @keyframes slideFromUp {
+        0% {
+            transform: translateY(-100%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideFromDown {
+        0% {
+            transform: translateY(100%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @media(max-width: 650px) {
+        &__picture {
+            width: 25rem;
+        }
+
+        &__block {
+            row-gap: 11rem;
+        }
+    }
+}
+
+@media(max-width: 415px) {
+    .systems {
+        &__block {
+            display: none;
+        }
+
+        &__block-mobile {
+            display: block;
+            overflow: hidden;
+            height: 30rem;
+        }
+    }
+
+    .swiper-wrapper {
+        display: flex !important;
+    }
+
+    .swiper-slide {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .swiper-container {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    .swiper-pagination {
+        position: relative;
+    }
+
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        border-radius: 10px;
+        background: var(--dark-grey) !important;
+        margin: 0 5px;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: var(--blue) !important;
+    }
+
+    .systems__img {
+        width: 100%;
+    }
+
+}
+
+.systems.show .systems__headline {
+    transform: translateY(0);
+    transition: 1.2s;
+}
+
+.systems.show .systems__block {
+    transform: translateY(0);
+    transition: 1.2s;
+}

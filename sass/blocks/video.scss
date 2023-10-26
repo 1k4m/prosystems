@@ -1,0 +1,44 @@
+.video {
+    background: var(--grey);
+    padding: 10rem 0;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        color: var(--blue);
+    }
+
+    &__box {
+        width: 80rem;
+        height: 50rem;
+    }
+
+    &__url {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__headline {
+        text-align: center;
+    }
+
+    @media(max-width: 415px) {
+        &__box {
+            width: 50rem;
+            height: 30rem;
+        }
+    }
+}
+
+.video.hidden {
+    opacity: 0;
+    transition: opacity 1.2s ease-in;
+}
+
+.video.show {
+    opacity: 1;
+}

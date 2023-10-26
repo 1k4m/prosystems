@@ -1,0 +1,161 @@
+.integration {
+
+    &__headline {
+
+        animation: slideFromUp 1.2s ease-in;
+
+        &--bg {
+            background: url("../img/integration/bg.png") top center/contain no-repeat;
+            height: 40rem;
+            padding: 10rem 0 0;
+        }
+    }
+
+    &__terminal {
+        display: flex;
+        justify-content: space-between;
+        margin: 10rem 0 15rem;
+        animation: slideFromDown 1.2s ease-in;
+    }
+
+    &__picture {
+        width: calc(33% - 20rem);
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    &__img-mobile {
+        display: none;
+    }
+
+    &__title {
+        color: var(--white);
+        text-align: right;
+
+        &--yellow {
+            color: var(--yellow);
+        }
+    }
+
+
+    @keyframes slideFromUp {
+        0% {
+            transform: translateY(-100%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideFromDown {
+        0% {
+            transform: translateY(100%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @media(max-width: 769px) {
+        &__headline {
+            &--bg {
+                padding: 5rem 0 0;
+            }
+        }
+
+        &__picture {
+            width: calc(33% - 10rem);
+        }
+    }
+
+    @media(max-width: 650px) {
+        &__headline {
+            &--bg {
+                height: 21rem;
+            }
+        }
+
+        &__about {
+            flex-direction: column;
+        }
+
+        &__picture-terminal {
+            width: 85%;
+        }
+
+        &__info {
+            width: 100%;
+        }
+
+        &__title {
+            font-size: 2.5rem;
+        }
+    }
+
+    @media(max-width: 426px) {
+        &__headline {
+            &--bg {
+                padding: 2.5rem 0 0;
+            }
+        }
+
+        &__title {
+            font-size: 2.3rem;
+        }
+
+        &__picture {
+            width: calc(33% - 2rem);
+        }
+
+        &__terminal {
+            margin: 2rem 0 15rem;
+        }
+    }
+
+    @media(max-width: 415px) {
+        &__headline {
+
+            &--bg {
+                background: url("../img/integration/bg-mobile.png") top center/contain no-repeat;
+                height: 32rem;
+                padding: 8rem 0 0;
+            }
+
+        }
+
+        &__img-mobile {
+            display: flex;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        &__img {
+            display: none;
+        }
+
+        &__terminal {
+            flex-direction: column;
+        }
+
+        &__point {
+            margin-left: 0 !important;
+        }
+
+        &__point-text {
+            width: 80%;
+        }
+
+        &__info {
+            padding: 0 4rem;
+        }
+
+        &__picture {
+            width: 100%;
+        }
+    }
+}

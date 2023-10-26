@@ -1,0 +1,24 @@
+.get {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15rem 0;
+    }
+
+    &__info-text {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+}
+
+.get.hidden {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s, transform 1s;
+}
+
+.get.show {
+    opacity: 1;
+    transform: translateY(0);
+}
