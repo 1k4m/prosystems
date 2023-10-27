@@ -83,7 +83,7 @@
         transform: rotate(-45deg);
     }
 
-    &__square:hover {
+    &__block:hover &__square {
         background: var(--yellow);
     }
 
