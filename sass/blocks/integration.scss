@@ -6,7 +6,7 @@
 
         &--bg {
             background: url("../img/integration/bg.png") top center/contain no-repeat;
-            height: 40rem;
+            height: 41rem;
             padding: 10rem 0 0;
         }
     }
@@ -18,13 +18,73 @@
         animation: slideFromDown 1.2s ease-in;
     }
 
-    &__picture {
+    &__block {
+        position: relative;
         width: calc(33% - 20rem);
+    }
+
+    &__kaspi {
+        width: 33rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__kaspi-logo {
+        width: 16rem;
+        position: absolute;
+        top: -6rem;
+        right: 2rem;
+    }
+
+    &__halyk {
+        width: 14rem;
+        position: absolute;
+        top: 2rem;
+        right: 8rem;
+    }
+
+    &__halyk-logo {
+        width: 16rem;
+        position: absolute;
+        top: -6rem;
+        right: 2rem;
+    }
+
+    &__jusan {
+        width: 35rem;
+        position: absolute;
+        top: 0rem;
+        right: 0;
+    }
+
+    &__jusan-logo {
+        width: 16rem;
+        position: absolute;
+        top: -4rem;
+        right: 0rem;
     }
 
     &__img {
         width: 100%;
         object-fit: contain;
+    }
+
+    &__logo {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    &__square {
+        background: var(--grey);
+        width: 25rem;
+        height: 25rem;
+        border-radius: 11.36px;
+        transform: rotate(-45deg);
+    }
+
+    &__square:hover {
+        background: var(--yellow);
     }
 
     &__img-mobile {
@@ -68,7 +128,7 @@
             }
         }
 
-        &__picture {
+        &__block {
             width: calc(33% - 10rem);
         }
     }
@@ -82,10 +142,6 @@
 
         &__about {
             flex-direction: column;
-        }
-
-        &__picture-terminal {
-            width: 85%;
         }
 
         &__info {
@@ -108,8 +164,49 @@
             font-size: 2.3rem;
         }
 
-        &__picture {
-            width: calc(33% - 2rem);
+        &__block {
+            width: calc(33% - 5rem);
+        }
+
+        &__kaspi {
+            width: 18rem;
+            top: 2rem;
+            right: -3rem;
+        }
+
+        &__kaspi-logo {
+            width: 10rem;
+            top: -2rem;
+            right: -4rem;
+        }
+
+        &__square {
+            width: 15rem;
+            height: 15rem;
+        }
+
+        &__halyk {
+            width: 8rem;
+            top: 2rem;
+            right: 2rem;
+        }
+
+        &__halyk-logo {
+            width: 9rem;
+            top: -3rem;
+            right: -3rem;
+        }
+
+        &__jusan {
+            width: 21rem;
+            top: 0;
+            right: -4rem;
+        }
+
+        &__jusan-logo {
+            width: 9rem;
+            top: -2rem;
+            right: -3rem;
         }
 
         &__terminal {
@@ -128,18 +225,9 @@
 
         }
 
-        &__img-mobile {
-            display: flex;
-            width: 100%;
-            object-fit: contain;
-        }
-
-        &__img {
-            display: none;
-        }
-
         &__terminal {
             flex-direction: column;
+            gap: 7rem;
         }
 
         &__point {
@@ -154,8 +242,52 @@
             padding: 0 4rem;
         }
 
-        &__picture {
+        &__block {
             width: 100%;
+        }
+
+        &__block:nth-child(2) {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &__kaspi {
+            width: 18rem;
+            top: 1rem;
+            right: 29rem;
+        }
+
+        &__kaspi-logo {
+            width: 18rem;
+            top: 7rem;
+            right: 2rem;
+        }
+
+        &__square {
+            width: 20rem;
+            height: 20rem;
+        }
+
+        &__halyk {
+            width: 9rem;
+            top: 0.5rem;
+            right: 5rem;
+        }
+
+        &__halyk-logo {
+            width: 18rem;
+            top: 6rem;
+            right: 28rem;
+        }
+
+        &__jusan {
+            right: 27rem;
+        }
+
+        &__jusan-logo {
+            width: 18rem;
+            top: 8rem;
+            right: 1rem;
         }
     }
 }

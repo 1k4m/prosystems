@@ -29,16 +29,6 @@ window.addEventListener('scroll', function() {
 });
 
 window.addEventListener('scroll', function() {
-    const advantagesSection = document.querySelector('.advantages');
-    const advantagesPosition = advantagesSection.getBoundingClientRect().top;
-    const screenPosition = window.innerHeight;
-
-    if (advantagesPosition < screenPosition) {
-        advantagesSection.classList.add('show');
-    }
-});
-
-window.addEventListener('scroll', function() {
     const aboutItems = document.querySelectorAll('.about__item');
     aboutItems.forEach(item => {
         const position = item.getBoundingClientRect();
@@ -53,6 +43,9 @@ window.addEventListener('scroll', function() {
     const systemsPosition = systemsSection.getBoundingClientRect().top;
     const screenPosition = window.innerHeight;
 
+    if (systemsPosition < screenPosition) {
+        systemsSection.classList.add('show');
+    }
 });
 
 window.addEventListener('scroll', function() {
@@ -65,8 +58,12 @@ window.addEventListener('scroll', function() {
     }
 });
 
+window.addEventListener('scroll', function() {
+    const advantagesSection = document.querySelector('.advantages');
+    const advantagesSectionPosition = advantagesSection.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight;
 
-
-
-
-
+    if (advantagesSectionPosition < screenPosition) {
+        advantagesSection.classList.add('show');
+    }
+});

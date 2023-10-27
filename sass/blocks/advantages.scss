@@ -3,9 +3,12 @@
     height: 100%;
     padding: 10rem 0;
 
-    &.show {
+    &__headline.show {
         opacity: 1;
-        transform: translateY(0);
+    }
+
+    &__items.show {
+        opacity: 1;
     }
 
     &__wrapper {
@@ -17,8 +20,9 @@
     &__headline {
         margin-bottom: 8rem;
         text-align: center;
+        animation: slideFromUp 2.5s ease-out;
         opacity: 0;
-        animation: slideFromUp 1.2s ease-out;
+        transition: opacity 2.5s ease-out;
     }
 
     &__title {
@@ -30,12 +34,13 @@
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 10rem;
+        animation: slideFromDown 2.5s ease-out;
         opacity: 0;
-        animation: slideFromDown 1.2s ease-out;
+        transition: opacity 2.5s ease-out;
     }
 
     &__item {
-        width: calc(33% - 18rem);
+        width: calc(33% - 7rem);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -80,6 +85,8 @@
             transform: translateY(0);
         }
     }
+
+
 
     @media(max-width: 769px) {
         &__item {
