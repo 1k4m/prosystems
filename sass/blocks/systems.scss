@@ -1,6 +1,10 @@
 .systems {
     padding: 15rem 0 20rem 0;
 
+    &.show {
+        transform: translateY(0);
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -9,7 +13,9 @@
     &__headline {
         text-align: center;
         margin-bottom: 8rem;
-        animation: slideFromDown 1.2s ease-out;
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: opacity 1.2s, transform 1.2s;
     }
 
     &__block {
@@ -18,7 +24,9 @@
         justify-content: center;
         gap: 20rem;
         align-items: flex-end;
-        animation: slideFromDown 1.2s ease-out;
+        opacity: 0;
+        transform: translateY(100%);
+        transition: opacity 1.2s, transform 1.2s;
     }
 
     &__block-mobile {
@@ -119,11 +127,13 @@
 }
 
 .systems.show .systems__headline {
+    opacity: 1;
     transform: translateY(0);
     transition: 1.2s;
 }
 
 .systems.show .systems__block {
+    opacity: 1;
     transform: translateY(0);
     transition: 1.2s;
 }

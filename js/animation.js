@@ -39,16 +39,6 @@ window.addEventListener('scroll', function() {
 });
 
 window.addEventListener('scroll', function() {
-    const systemsSection = document.querySelector('.systems');
-    const systemsPosition = systemsSection.getBoundingClientRect().top;
-    const screenPosition = window.innerHeight;
-
-    if (systemsPosition < screenPosition) {
-        systemsSection.classList.add('show');
-    }
-});
-
-window.addEventListener('scroll', function() {
     const priceSection = document.querySelector('.price');
     const pricePosition = priceSection.getBoundingClientRect().top;
     const screenPosition = window.innerHeight;
@@ -65,5 +55,15 @@ window.addEventListener('scroll', function() {
 
     if (advantagesSectionPosition < screenPosition) {
         advantagesSection.classList.add('show');
+    }
+});
+
+window.addEventListener('scroll', function() {
+    const systemsSection = document.querySelector('.systems');
+    const systemsPosition = systemsSection.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight;
+
+    if (systemsPosition < screenPosition) {
+        systemsSection.classList.add('show');
     }
 });

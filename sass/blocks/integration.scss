@@ -14,7 +14,7 @@
     &__terminal {
         display: flex;
         justify-content: space-between;
-        margin: 10rem 0 15rem;
+        margin: 15rem 0 25rem;
         animation: slideFromDown 1.2s ease-in;
     }
 
@@ -130,6 +130,10 @@
 
         &__block {
             width: calc(33% - 10rem);
+        }
+
+        &__terminal {
+            margin: 5rem 0 20rem;
         }
     }
 

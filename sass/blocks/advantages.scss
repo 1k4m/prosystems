@@ -3,12 +3,8 @@
     height: 100%;
     padding: 10rem 0;
 
-    &__headline.show {
-        opacity: 1;
-    }
-
-    &__items.show {
-        opacity: 1;
+    &.show {
+        transform: translateY(0);
     }
 
     &__wrapper {
@@ -20,9 +16,9 @@
     &__headline {
         margin-bottom: 8rem;
         text-align: center;
-        animation: slideFromUp 2.5s ease-out;
         opacity: 0;
-        transition: opacity 2.5s ease-out;
+        transform: translateY(-100%);
+        transition: opacity 1.2s, transform 1.2s;
     }
 
     &__title {
@@ -34,9 +30,9 @@
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 10rem;
-        animation: slideFromDown 2.5s ease-out;
         opacity: 0;
-        transition: opacity 2.5s ease-out;
+        transform: translateY(100%);
+        transition: opacity 1.2s, transform 1.2s;
     }
 
     &__item {
