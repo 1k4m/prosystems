@@ -2,7 +2,7 @@
 
     &__headline {
 
-        animation: slideFromUp 1.2s ease-in;
+        // animation: slideFromUp 1.2s ease-in;
 
         &--bg {
             background: url("../img/integration/bg.png") top center/contain no-repeat;
@@ -15,7 +15,7 @@
         display: flex;
         justify-content: space-between;
         margin: 15rem 0 25rem;
-        animation: slideFromDown 1.2s ease-in;
+        // animation: slideFromDown 1.2s ease-in;
     }
 
     &__block {
@@ -107,7 +107,7 @@
         }
 
         100% {
-            transform: translateY(0);
+            transform: translateY(0%);
         }
     }
 
@@ -294,4 +294,12 @@
             right: 1rem;
         }
     }
+}
+
+.integration.show .integration__headline {
+    animation: slideFromUp 1.2s ease-out;
+}
+
+.integration.show .integration__terminal {
+    animation: slideFromDown 1.2s ease-out;
 }

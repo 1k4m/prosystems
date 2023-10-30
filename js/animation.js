@@ -67,3 +67,13 @@ window.addEventListener('scroll', function() {
         systemsSection.classList.add('show');
     }
 });
+
+window.addEventListener('scroll', function() {
+    var integrationSection = document.querySelector('.integration');
+    var integrationSectionPosition = integrationSection.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight / 1.3;
+
+    if (integrationSectionPosition < screenPosition) {
+        integrationSection.classList.add('show');
+    }
+});
