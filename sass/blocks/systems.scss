@@ -42,26 +42,6 @@
         object-fit: contain;
     }
 
-    // @keyframes slideFromUp {
-    //     0% {
-    //         transform: translateY(-100%);
-    //     }
-
-    //     100% {
-    //         transform: translateY(0);
-    //     }
-    // }
-
-    // @keyframes slideFromDown {
-    //     0% {
-    //         transform: translateY(100%);
-    //     }
-
-    //     100% {
-    //         transform: translateY(0);
-    //     }
-    // }
-
     @media(max-width: 650px) {
         &__picture {
             width: 25rem;

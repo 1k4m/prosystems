@@ -2,8 +2,6 @@
 
     &__headline {
 
-        // animation: slideFromUp 1.2s ease-in;
-
         &--bg {
             background: url("../img/integration/bg.png") top center/contain no-repeat;
             height: 41rem;
@@ -15,7 +13,6 @@
         display: flex;
         justify-content: space-between;
         margin: 15rem 0 25rem;
-        // animation: slideFromDown 1.2s ease-in;
     }
 
     &__block {
@@ -101,9 +98,9 @@
     }
 
 
-    @keyframes slideFromUp {
+    @keyframes slideFromUpInt {
         0% {
-            transform: translateY(-100%);
+            transform: translateY(-5%);
         }
 
         100% {
@@ -111,7 +108,7 @@
         }
     }
 
-    @keyframes slideFromDown {
+    @keyframes slideFromDownInt {
         0% {
             transform: translateY(100%);
         }
@@ -297,9 +294,9 @@
 }
 
 .integration.show .integration__headline {
-    animation: slideFromUp 1.2s ease-out;
+    animation: slideFromUpInt 1.2s ease-out;
 }
 
 .integration.show .integration__terminal {
-    animation: slideFromDown 1.2s ease-out;
+    animation: slideFromDownInt 1.2s ease-out;
 }
